@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POST TITLE — Yilin Catherine Liao</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #fafafa;
+      --surface:  #ffffff;
+      --border:   #e5e5e5;
+      --text:     #1a1a1a;
+      --muted:    #6b7280;
+      --accent:   #2563eb;
+      --accent-h: #1d4ed8;
+      --radius:   8px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+      flex: 1;
+    }
+
+    /* ── Nav ── */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-decoration: none;
+      margin-bottom: 48px;
+      transition: color 0.15s;
+    }
+
+    .back-link:hover { color: var(--accent); }
+
+    /* ── Post header ── */
+    .post-header { margin-bottom: 48px; }
+
+    .post-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .post-meta {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    /* ── Post body ── */
+    .post-body { font-size: 1rem; }
+
+    .post-body p { margin-bottom: 1.25rem; }
+
+    .post-body h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin: 2rem 0 0.75rem;
+    }
+
+    .post-body h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    .post-body ul,
+    .post-body ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .post-body li { margin-bottom: 0.25rem; }
+
+    .post-body a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .post-body a:hover { color: var(--accent-h); }
+
+    .post-body code {
+      font-family: "SF Mono", "Fira Code", monospace;
+      font-size: 0.875em;
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .post-body pre {
+      background: #f3f4f6;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      overflow-x: auto;
+      margin-bottom: 1.25rem;
+    }
+
+    .post-body pre code {
+      background: none;
+      padding: 0;
+      font-size: 0.875rem;
+    }
+
+    .post-body blockquote {
+      border-left: 3px solid var(--border);
+      padding-left: 1rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8125rem;
+      color: var(--border);
+    }
+  </style>
+</head>
+<body>
+  <main>
+
+    <a class="back-link" href="../blog.html">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      Blog
+    </a>
+
+    <div class="post-header">
+      <h1>Blog Purpose</h1>
+      <p class="post-meta">2026-04-06</p>
+    </div>
+
+    <div class="post-body">
+
+      <p>This blog site was created for POC and documentation purposes. Blog plans are to write about thoughts related to the projects (e.g. AI news etc.)</p>
+
+    </div>
+
+  </main>
+
+  <footer>© 2026 Yilin Catherine Liao</footer>
+</body>
+</html>
